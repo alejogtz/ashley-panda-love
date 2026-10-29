@@ -4,9 +4,12 @@ Un mini sitio estático para GitHub Pages: atrapá panditas, ositas y corazones 
 
 ## Qué incluye
 
-- `index.html` — página principal del juego.
-- `styles.css` — estilos responsive, accesibles y sin dependencias externas.
-- `script.js` — lógica del mini juego.
+- `index.html` — página principal del catcher romántico.
+- `styles.css` — estilos del catcher responsive, accesible y sin dependencias externas.
+- `script.js` — lógica del catcher.
+- `playground.html` — segunda página inspirada más directamente en Poteto: panditas/ositas móviles con cartitas secretas.
+- `playground.css` — estilos del jardín fullscreen y personajes volteables.
+- `playground.js` — lógica del playground, personaje de la suerte, confetti y replay.
 - `design/ashley-panda-love/` — tres direcciones visuales usadas como exploración de diseño.
 
 ## Ejecutar localmente
@@ -19,6 +22,11 @@ python3 -m http.server 8000
 
 Después entrá a <http://localhost:8000>.
 
+Páginas disponibles:
+
+- <http://localhost:8000/> — catcher romántico.
+- <http://localhost:8000/playground.html> — playground de panditas/ositas con cartitas secretas.
+
 ## Publicar en GitHub Pages
 
 1. Creá un repositorio en GitHub, por ejemplo `ashley-panda-love`.
@@ -30,4 +38,6 @@ Después entrá a <http://localhost:8000>.
 
 ## Personalizar mensajes
 
-Editá el arreglo `loveMessages` en `script.js`. Cada texto nuevo se convierte en una cartita desbloqueable.
+Editá el arreglo `loveMessages` en `script.js` para el catcher.
+
+Para la página inspirada en Poteto, editá el arreglo `messages` en `playground.js`. Cada texto corresponde a una pandita/osita del jardín.

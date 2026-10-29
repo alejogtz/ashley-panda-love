@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Un playground de panditas y ositas para Ashley: tocá cada personaje para descubrir mensajes de amor." />
+  <meta name="theme-color" content="#cfe8d2" />
+  <title>Para Ashley · Panda Playground</title>
+  <link rel="stylesheet" href="playground.css" />
+</head>
+<body>
+  <main
+    class="playground"
+    id="playground"
+    aria-label="Jardín de panditas y ositas. Tocá un personaje para leer su nota secreta de amor para Ashley. Encontrá el personaje de la suerte para abrir el final."
+  ></main>
+
+  <aside class="intro-card" aria-labelledby="playground-title">
+    <p class="eyebrow">Modo poteto cute</p>
+    <h1 id="playground-title">Encontrá las ositas secretas de Ashley.</h1>
+    <p>Tocá una pandita u osita para darla vuelta y descubrir una nota. Una tiene el final especial.</p>
+    <nav class="intro-actions" aria-label="Navegación">
+      <a href="index.html">Volver al catcher</a>
+      <button id="shuffleAgain" type="button">Mezclar de nuevo</button>
+    </nav>
+  </aside>
+
+  <div class="finale" id="finale" hidden role="dialog" aria-modal="true" aria-labelledby="finale-title">
+    <div class="finale__card">
+      <p class="eyebrow">La pandita de la suerte</p>
+      <h2 id="finale-title">Ashley, ganaste todos mis corazoncitos.</h2>
+      <p>Si este jardín tuviera mil ositas, igual te buscaría a vos primero.</p>
+      <button id="playAgain" type="button">Jugar otra vez</button>
+    </div>
+  </div>
+
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+  <p class="sr-only" id="status" role="status"></p>
+
+  <script src="playground.js"></script>
+</body>
+</html>
