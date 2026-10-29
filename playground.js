@@ -30,6 +30,8 @@
   const confettiColors = ['#ff5f9f', '#d9c7ff', '#bcebdc', '#ffd36a', '#ff8abf', '#ffffff'];
 
   const field = document.querySelector('#playground');
+  const introCard = document.querySelector('#introCard');
+  const closeIntro = document.querySelector('#closeIntro');
   const shuffleAgain = document.querySelector('#shuffleAgain');
   const playAgain = document.querySelector('#playAgain');
   const finale = document.querySelector('#finale');
@@ -47,6 +49,10 @@
   let height = 0;
   let baseSize = 0;
 
+  closeIntro.addEventListener('click', () => {
+    introCard.hidden = true;
+    status.textContent = 'Mensaje de inicio cerrado. El jardín queda listo para jugar.';
+  });
   shuffleAgain.addEventListener('click', start);
   playAgain.addEventListener('click', start);
   window.addEventListener('resize', resize);

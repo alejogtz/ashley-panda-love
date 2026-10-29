@@ -75,6 +75,30 @@ button { font: inherit; }
   padding: 24px;
 }
 
+.intro-card[hidden] { display: none; }
+
+.intro-card__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ffd5e7;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--rose-dark);
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.intro-card__close:focus-visible {
+  outline: 4px solid rgba(255, 106, 169, 0.42);
+  outline-offset: 3px;
+}
+
 .eyebrow {
   margin: 0 0 10px;
   color: var(--rose-dark);
