@@ -1,0 +1,27 @@
+{
+  "title": "Ashley Panda Love Game",
+  "brief": "A GitHub Pages-ready romantic catching game inspired by playful collectable pages: replace potatoes with ositas and panditas, and reveal cute love messages for Ashley.",
+  "artboards": [
+    {
+      "file": "01-soft-storybook.html",
+      "title": "Soft Storybook",
+      "tradeoff": "Most romantic and personal; less arcade energy.",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "file": "02-arcade-valentine.html",
+      "title": "Arcade Valentine",
+      "tradeoff": "Most game-like and energetic; less intimate keepsake feeling.",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "file": "03-polaroid-picnic.html",
+      "title": "Polaroid Picnic",
+      "tradeoff": "Feels like a memory scrapbook; gameplay appears softer and slower.",
+      "width": 1440,
+      "height": 900
+    }
+  ]
+}

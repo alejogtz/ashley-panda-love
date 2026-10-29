@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "chosen": "01-soft-storybook.html",
+  "handoffs": {
+    "01-soft-storybook.html": {
+      "status": "implemented",
+      "queued": true,
+      "sentAt": "2026-10-29T04:50:48.797Z",
+      "startedAt": "2026-10-29T04:51:45.048Z",
+      "implementedAt": "2026-10-29T04:55:19.336Z",
+      "note": "Implemented and final-verified the Soft Storybook direction in the static site.",
+      "previewUrl": "http://127.0.0.1:8765/"
+    }
+  }
+}

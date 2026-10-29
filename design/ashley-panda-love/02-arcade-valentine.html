@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashley's Panda Garden — Arcade Valentine</title>
+  <style>
+    :root { --bg:#1a1020; --panel:#2a1835; --pink:#ff4fd8; --cyan:#7df9ff; --yellow:#ffe66d; --white:#fff7fd; }
+    *{box-sizing:border-box} body{margin:0; min-height:100vh; font-family: ui-rounded, "SF Pro Rounded", Inter, system-ui, sans-serif; color:var(--white); background: radial-gradient(circle at 50% 0%, #432358, transparent 38rem), var(--bg); overflow:hidden;}
+    main{width:min(1180px, calc(100vw - 40px)); margin:auto; padding:56px 0;}
+    .grid{display:grid; grid-template-columns:420px 1fr; gap:30px; align-items:stretch;}
+    .side,.stage{border:2px solid rgba(255,255,255,.14); border-radius:32px; background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03)); box-shadow:0 28px 90px rgba(0,0,0,.36);}
+    .side{padding:38px;} .badge{display:inline-flex; border:1px solid var(--cyan); color:var(--cyan); padding:8px 12px; border-radius:999px; font-weight:900; text-transform:uppercase; font-size:12px; letter-spacing:.14em;}
+    h1{font-size:64px; line-height:.92; margin:28px 0 18px; text-shadow:0 0 24px rgba(255,79,216,.44);} p{font-size:19px; line-height:1.6; color:#ead3eb;}
+    .meters{display:grid; gap:14px; margin-top:30px}.meter{background:#160c1c; border-radius:18px; padding:14px}.bar{height:12px;border-radius:999px;background:linear-gradient(90deg,var(--pink),var(--cyan));margin-top:10px}
+    .stage{position:relative; min-height:640px; overflow:hidden; padding:24px;} .hud{display:flex; justify-content:space-between; font-size:20px; font-weight:900; color:var(--yellow)}
+    .lane{position:absolute; inset:86px 24px 24px; border-radius:26px; background:repeating-linear-gradient(90deg, transparent 0 86px, rgba(255,255,255,.06) 86px 88px)}
+    .item{position:absolute; top:-20px; font-size:52px; filter:drop-shadow(0 0 14px rgba(255,255,255,.35)); animation:fall 3.8s linear infinite}.item:nth-child(1){left:18%;animation-delay:-.8s}.item:nth-child(2){left:48%;animation-delay:-2s}.item:nth-child(3){left:76%;animation-delay:-1.2s}
+    .basket{position:absolute; bottom:30px; left:48%; font-size:76px}.toast{position:absolute; left:52px; right:52px; bottom:130px; border:1px solid rgba(255,255,255,.22); border-radius:24px; padding:22px; background:rgba(26,16,32,.86); font-size:24px; font-weight:900;}
+    @keyframes fall{to{transform:translateY(650px) rotate(1turn)}} @media(max-width:900px){body{overflow:auto}.grid{grid-template-columns:1fr}.stage{min-height:560px}} @media(prefers-reduced-motion:reduce){.item{animation:none}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="grid" aria-label="Arcade valentine direction">
+      <aside class="side"><span class="badge">panda arcade</span><h1>Love notes, but make it a tiny arcade.</h1><p>Brighter, bolder, and more game-like. The score becomes a love meter and every catch feels like winning a round for Ashley.</p><div class="meters"><div class="meter">Love combo<div class="bar" style="width:78%"></div></div><div class="meter">Cute overload<div class="bar" style="width:92%"></div></div></div></aside>
+      <div class="stage"><div class="hud"><span>Score 143</span><span>ASHLEY 💖</span></div><div class="lane"><span class="item">🐼</span><span class="item">🧸</span><span class="item">💌</span></div><div class="toast">Ashley, catching you was my favorite high score.</div><div class="basket">🧺</div></div>
+    </section>
+  </main>
+</body>
+</html>

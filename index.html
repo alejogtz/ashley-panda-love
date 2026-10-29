@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Un mini juego de amor para Ashley: atrapá panditas, ositas y corazones para descubrir mensajes dulces." />
+  <meta name="theme-color" content="#fff6fb" />
+  <title>Para Ashley · Panda Love Catcher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#game">Saltar al juego</a>
+
+  <main class="page-shell">
+    <section class="soft-storybook" aria-labelledby="hero-title">
+      <div class="storybook-card storybook-card--intro">
+        <p class="eyebrow">Un jueguito para Ashley</p>
+        <h1 id="hero-title">Atrapá panditas, desbloqueá amor gigante.</h1>
+        <p class="hero-text">
+          Una página suave y soñadora donde cada osita, pandita o corazoncito que cae
+          revela una nota dulce hecha para Ashley.
+        </p>
+        <div class="hero-actions" aria-label="Acciones principales">
+          <a class="button button--primary" href="#game">Empezar a cazar amor</a>
+          <button class="button button--ghost" id="surpriseButton" type="button">Mensaje sorpresa</button>
+          <span class="hidden-count"><span id="totalMessages">0</span> mensajitos escondidos</span>
+        </div>
+      </div>
+
+      <section class="phone-game" id="game" aria-labelledby="game-title">
+        <div class="phone-game__hud">
+          <span>🐼 <strong id="score">0</strong></span>
+          <span>Ashley mode · <strong id="unlocked">0</strong> desbloqueados</span>
+        </div>
+
+        <h2 class="sr-only" id="game-title">Juego de atrapar panditas para Ashley</h2>
+        <div class="game-stage" id="gameStage" tabindex="0" role="application" aria-label="Juego: usá mouse, dedo o flechas para mover la canasta">
+          <p class="stage-hint">Usá el mouse, el dedo o las flechas ← →</p>
+          <div class="falling-items" id="fallingItems" aria-hidden="true"></div>
+          <div class="message-card" aria-live="polite">
+            <p id="currentMessage">Ashley, atrapá tu primer pandita para revelar una nota.</p>
+          </div>
+          <div class="basket" id="basket" aria-hidden="true">🧺</div>
+        </div>
+      </section>
+    </section>
+
+    <section class="notes" aria-labelledby="notes-title">
+      <div class="notes__intro">
+        <p class="eyebrow">Colección</p>
+        <h2 id="notes-title">Cartitas desbloqueadas</h2>
+      </div>
+      <ol class="notes-grid" id="notesGrid"></ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
